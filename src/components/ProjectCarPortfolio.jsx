@@ -24,7 +24,7 @@ export default function ProjectCarPortfolio() {
             image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
             title: "Project Management Tool",
             description: "A project management tool designed to help teams collaborate, track progress, and manage tasks efficiently. Includes Kanban boards and Gantt charts.",
-            tags: ["React", "Node.js", "Express", "MongoDB"],
+            tags: ["React", "Node.js", "MongoDB"],
             liveUrl: "https://example.com",
             githubUrl: "https://github.com"
         },
@@ -50,13 +50,13 @@ export default function ProjectCarPortfolio() {
     return (
         <>
             <section className="projectcard py-10 min-h-screen">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
                         <h1 className="text-4xl text-orange-400 mb-1">My Projects</h1>
                         <p className="text-gray-400 text-lg">Showcasing my latest work and side projects</p>
                     </div>
-                    <div className="max-h-[500px] overflow-y-auto pr-2">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8 py-1  mx-7 rounded-2xl">
+                    <div className="max-h-[565px] overflow-y-auto pr-2">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8 py-1  rounded-2xl">
                             {Projects.map((project, index) => (
                                 <ProjectCard
                                     key={index}

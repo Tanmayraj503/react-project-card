@@ -16,7 +16,7 @@ export default function ProjectCard({ image, title, description, tags, liveUrl, 
                 <h3 className="text-[22px] font-semibold text-gray-800 mb-3">{title}</h3>
                 <p className="text-gray-600 mb-4 line-clamp-3">{description}</p>
 
-                <div className='flex flex-wrap gap-2 mb-12'>
+                <div className='flex flex-wrap gap-2 mb-25 sm:mb-20'>
                     {tags.map((tag, index) => (
                         <span
                             key={index}
@@ -28,21 +28,22 @@ export default function ProjectCard({ image, title, description, tags, liveUrl, 
                     }
                 </div>
 
-                <div className='flex gap-3 absolute bottom-4 mx-auto'>
+                <div className='flex flex-wrap sm:flex-nowrap gap-3 absolute bottom-4 mr-6 mt-4'>
                     <a
                         href={liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className='text-gray-500 hover:text-gray-700 flex items-center gap-1 font-medium px-3 py-2 justify-center bg-orange-400 rounded-2xl hover:bg-orange-700 border-none shadow-orange-400 shadow-sm hover:translate-y-[-1px]'
+                        className='text-gray-500 hover:text-gray-700 flex items-center gap-1 font-medium text-sm sm:text-base px-3 py-2 justify-center bg-orange-400 rounded-2xl hover:bg-orange-700 border-none shadow-orange-400 shadow-sm hover:translate-y-[-1px]'
                     >
-                        Live Demo <ExternalLink className='w=4 h=4' />
+                        Preview <ExternalLink className='w-4 h-4' />
                     </a>
                     <a
                         href={githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className='text-gray-500 hover:text-gray-700 flex items-center gap-1 font-medium px-3 py-2 justify-center bg-orange-400 rounded-2xl hover:bg-orange-700 border-none shadow-orange-400 shadow-sm hover:translate-y-[-1px]'>
-                        Github <Github className='w=4 h=4' />
+                        className='text-gray-500 hover:text-gray-700 flex items-center gap-1 font-medium text-sm sm:text-base px-3 py-2 justify-center bg-orange-400 rounded-2xl hover:bg-orange-700 border-none shadow-orange-400 shadow-sm hover:translate-y-[-1px]'
+                    >
+                        Github <Github className='w-4 h-4' />
                     </a>
                 </div>
 
