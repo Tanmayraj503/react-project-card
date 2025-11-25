@@ -50,7 +50,7 @@ export default function ProjectCarPortfolio() {
     return (
         <>
             <section className="projectcard py-10 min-h-screen">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-7xl mx-auto xl:max-w-6xl">
                     <div className="text-center mb-12">
                         <h1 className="text-4xl text-orange-400 mb-1">My Projects</h1>
                         <p className="text-gray-400 text-lg">Showcasing my latest work and side projects</p>
