@@ -8,7 +8,7 @@ export default function ProjectCarPortfolio() {
             image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
             title: "E-Commerce Platform",
             description: "A full-stack e-commerce platform with payment integration, product management, and user authentication. Built with modern technologies.",
-            tags: ["React", "Node.js", "MongoDB", "Stripe"],
+            tags: ["React", "Node.js", "MongoDB"],
             liveUrl: "https://example.com",
             githubUrl: "https://github.com"
         },

@@ -4,19 +4,19 @@ import { ExternalLink, Github } from 'lucide-react';
 export default function ProjectCard({ image, title, description, tags, liveUrl, githubUrl }) {
     return (
 
-        <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl border border-gray-200 transition-shadow overflow-hidden duration-300 hover:-translate-y-0.5 relative">
+        <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl border border-gray-200 transition-shadow overflow-hidden duration-300  hover:-translate-y-1 relative flex flex-col">
             <div className='relative overflow-hidden'>
                 <img
                     src={image}
                     alt={title}
-                    className='w-full overflow-hidden object-cover transition-transform duration-300 hover:scale-110'
+                    className='w-full overflow-hidden h-48 object-cover transition-transform duration-300 hover:scale-110'
                 />
             </div>
             <div className='p-6'>
                 <h3 className="text-[22px] font-semibold text-gray-800 mb-3">{title}</h3>
                 <p className="text-gray-600 mb-4 line-clamp-3">{description}</p>
 
-                <div className='flex flex-wrap gap-2 mb-25 sm:mb-20'>
+                <div className='flex flex-wrap gap-2 mb-3'>
                     {tags.map((tag, index) => (
                         <span
                             key={index}
@@ -28,20 +28,20 @@ export default function ProjectCard({ image, title, description, tags, liveUrl, 
                     }
                 </div>
 
-                <div className='flex flex-wrap sm:flex-nowrap gap-3 absolute bottom-4 mr-6 mt-4'>
+                <div className='flex flex-wrap sm:flex-nowrap gap-3 mt-auto pt-2   mr-6 '>
                     <a
                         href={liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className='text-gray-500 hover:text-gray-700 flex items-center gap-1 font-medium text-sm sm:text-base px-3 py-2 justify-center bg-orange-400 rounded-2xl hover:bg-orange-700 border-none shadow-orange-400 shadow-sm hover:translate-y-[-1px]'
+                        className='text-white flex items-center gap-1 font-medium text-sm sm:text-base px-4 py-2 justify-center bg-orange-400 rounded-xl hover:bg-orange-700 border-none shadow-orange-400 shadow-sm'
                     >
-                        Preview <ExternalLink className='w-4 h-4' />
+                        Live <ExternalLink className='w-4 h-4' />
                     </a>
                     <a
                         href={githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className='text-gray-500 hover:text-gray-700 flex items-center gap-1 font-medium text-sm sm:text-base px-3 py-2 justify-center bg-orange-400 rounded-2xl hover:bg-orange-700 border-none shadow-orange-400 shadow-sm hover:translate-y-[-1px]'
+                        className='text-white flex items-center gap-1 font-medium text-sm sm:text-base px-4 py-2 justify-center bg-gray-900 rounded-xl hover:bg-gray-700 border-none shadow-gray-400 shadow-sm transition-all '
                     >
                         Github <Github className='w-4 h-4' />
                     </a>
