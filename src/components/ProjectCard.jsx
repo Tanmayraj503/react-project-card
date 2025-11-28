@@ -2,6 +2,14 @@ import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
 export default function ProjectCard({ image, title, description, tags, liveUrl, githubUrl }) {
+    const tagColors = [
+        "bg-blue-100 text-blue-800",
+        "bg-green-100 text-green-800",
+        "bg-purple-100 text-purple-800",
+        "bg-pink-100 text-pink-800",
+        "bg-yellow-100 text-yellow-800",
+        "bg-orange-100 text-orange-800",
+    ];
     return (
 
         <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl border border-gray-200 transition-shadow overflow-hidden duration-300  hover:-translate-y-1 relative flex flex-col">
@@ -13,14 +21,15 @@ export default function ProjectCard({ image, title, description, tags, liveUrl, 
                 />
             </div>
             <div className='p-6'>
-                <h3 className="text-[22px] font-semibold text-gray-800 mb-3">{title}</h3>
+                <h3 className="text-[22px] font-semibold text-gray-800 mb-2">{title}</h3>
                 <p className="text-gray-600 mb-4 line-clamp-3">{description}</p>
 
-                <div className='flex flex-wrap gap-2 mb-3'>
+                <div className='flex flex-wrap gap-2 mb-4'>
                     {tags.map((tag, index) => (
                         <span
                             key={index}
-                            className='bg-orange-100 text-orange-800 text-sm font-medium px-3 py-1 rounded-full'
+                            className={`text-sm font-medium px-3 py-1 rounded-full
+                    ${tagColors[index % tagColors.length]}`}
                         >
                             {tag}
                         </span>
