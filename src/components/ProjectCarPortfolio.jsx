@@ -64,7 +64,7 @@ const [activeCategory, setActiveCategory] = useState('major');
                         <h1 className="text-4xl font-bold text-orange-400 mb-1">My Projects</h1>
                         <p className="text-gray-400 text-lg">Showcasing my latest work and side projects</p>
                     </div>
-                    <div className="flex flex-wrap justify-center gap-4 mb-6">
+                    {/* <div className="flex flex-wrap justify-center gap-4 mb-6">
                         {categories.map((category) => (
                             <button
                                 key={category.id}
@@ -83,7 +83,7 @@ const [activeCategory, setActiveCategory] = useState('major');
                                 </span>
                             </button>
                         ))}
-                    </div>
+                    </div> */}
                     <div className="max-h-[490px] overflow-y-auto pr-2">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-1  rounded-2xl">
                             {Projects[activeCategory].map((project, index) => (
