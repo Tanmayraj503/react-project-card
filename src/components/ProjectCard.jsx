@@ -12,7 +12,7 @@ export default function ProjectCard({ image, title, description, tags, liveUrl, 
     ];
     return (
 
-        <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl border border-gray-200 transition-shadow overflow-hidden duration-300  hover:-translate-y-1 relative flex flex-col">
+        <div className="bg-[#262b3d6e] rounded-3xl shadow-lg border border-gray-600 hover:shadow-2xl  transition-shadow overflow-hidden duration-200  hover:-translate-y-1 relative flex flex-col">
             <div className='relative overflow-hidden'>
                 <img
                     src={image}
@@ -21,8 +21,8 @@ export default function ProjectCard({ image, title, description, tags, liveUrl, 
                 />
             </div>
             <div className='p-6'>
-                <h3 className="text-[22px] font-semibold text-gray-800 mb-2">{title}</h3>
-                <p className="text-gray-600 mb-4 line-clamp-3">{description}</p>
+                <h3 className="text-[22px] font-semibold text-white mb-2">{title}</h3>
+                <p className="text-gray-500 mb-4 font-semibold line-clamp-3">{description}</p>
 
                 <div className='flex flex-wrap gap-2 mb-4'>
                     {tags.map((tag, index) => (

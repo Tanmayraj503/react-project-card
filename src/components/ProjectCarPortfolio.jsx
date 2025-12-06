@@ -58,10 +58,10 @@ const [activeCategory, setActiveCategory] = useState('major');
 
     return (
         <>
-            <section className="projectcard py-10 min-h-screen">
+            <section className="projectcard py-10 bg-[#080E21] min-h-screen overflow-y-scroll scrollbar-hide-arrows">
                 <div className="max-w-7xl mx-auto xl:max-w-6xl">
                     <div className="text-center mb-10">
-                        <h1 className="text-4xl font-bold text-orange-400 mb-1">My Projects</h1>
+                        <h1 className="text-5xl font-bold text-purple-500 mb-1">My Projects</h1>
                         <p className="text-gray-400 text-lg">Showcasing my latest work and side projects</p>
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 mb-6">
@@ -69,15 +69,16 @@ const [activeCategory, setActiveCategory] = useState('major');
                             <button
                                 key={category.id}
                                 onClick={() => setActiveCategory(category.id)}
-                                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${activeCategory === category.id
-                                        ? 'bg-blue-600 text-white shadow-lg scale-105'
-                                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200 shadow'
+                                className={`px-6 relative py-3 font-semibold overflow-hidden group ${activeCategory === category.id
+                                        ? ' text-white '
+                                        : ' text-gray-500 '
                                     }`}
                             >
                                 {category.label}
-                                <span className={`ml-2 px-2 py-1 rounded-full text-sm ${activeCategory === category.id
-                                        ? 'bg-blue-500 text-white'
-                                        : 'bg-gray-200 text-gray-600'
+                                <span className="absolute bottom-1 bg-purple-700 h-0.5 transition-all duration-500 ease-out w-0 left-0 group-hover:w-full"></span>
+                                <span className={`ml-2 px-2 py-0.5 rounded-full text-sm ${activeCategory === category.id
+                                        ? 'bg-purple-600 text-white'
+                                        : 'bg-gray-200 text-gray-500'
                                     }`}>
                                     {category.count}
                                 </span>
