@@ -58,7 +58,7 @@ const [activeCategory, setActiveCategory] = useState('major');
 
     return (
         <>
-            <section className="projectcard py-10 bg-[#080E21] min-h-screen overflow-y-scroll scrollbar-hide-arrows">
+            <section className="projectcard pt-10 pb-10 bg-[#080E21] min-h-screen overflow-y-scroll scrollbar-hide-arrows">
                 <div className="max-w-7xl mx-auto xl:max-w-6xl">
                     <div className="text-center mb-10">
                         <h1 className="text-5xl font-bold text-purple-500 mb-1">My Projects</h1>
@@ -85,7 +85,7 @@ const [activeCategory, setActiveCategory] = useState('major');
                             </button>
                         ))}
                     </div>
-                    <div className="max-h-[490px] overflow-y-auto pr-2">
+                    <div className="pb-14  overflow-y-auto pr-2">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-1  rounded-2xl">
                             {Projects[activeCategory].map((project, index) => (
                                 <ProjectCard

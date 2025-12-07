@@ -12,7 +12,7 @@ export default function ProjectCard({ image, title, description, tags, liveUrl, 
     ];
     return (
 
-        <div className="bg-[#262b3d6e] rounded-3xl shadow-lg border border-gray-600 hover:shadow-2xl  transition-shadow overflow-hidden duration-200  hover:-translate-y-1 relative flex flex-col">
+        <div className="bg-[#262b3d6e] rounded-3xl shadow-lg border border-gray-600 hover:shadow-2xl hover:shadow-[#10193f] transition- overflow-hidden duration-500  hover:-translate-y-1 relative flex flex-col">
             <div className='relative overflow-hidden'>
                 <img
                     src={image}
@@ -29,7 +29,7 @@ export default function ProjectCard({ image, title, description, tags, liveUrl, 
                         <span
                             key={index}
                             className={`text-sm font-medium px-3 py-1 rounded-full
-                    ${tagColors[index % tagColors.length]}`}
+                    bg-[#10101d] text-white border border-gray-700`}
                         >
                             {tag}
                         </span>
