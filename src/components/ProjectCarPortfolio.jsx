@@ -100,6 +100,9 @@ const [activeCategory, setActiveCategory] = useState('major');
                             ))}
                         </div>
                     </div>
+                    <div className="">
+                        <button className="px-6 py-3 font-semibold text-white bg-purple-600 lg:hidden pointer-cursor text-center block mx-auto rounded-2xl hover:bg-purple-700 transition duration-300">More Projects</button>
+                    </div>
                 </div>
             </section>
         </>
