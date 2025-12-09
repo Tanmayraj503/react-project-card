@@ -88,8 +88,8 @@ const [activeCategory, setActiveCategory] = useState('major');
                     <div className="pb-14  overflow-y-auto pr-2">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-1  rounded-2xl">
                             {Projects[activeCategory].map((project, index) => (
+                                <div key={index} className={`${index >= 3 ? 'hidden lg:block' : ''} `}>
                                 <ProjectCard
-                                    key={index}
                                     image={project.image}
                                     title={project.title}
                                     description={project.description}
@@ -97,6 +97,7 @@ const [activeCategory, setActiveCategory] = useState('major');
                                     liveUrl={project.liveUrl}
                                     githubUrl={project.githubUrl}
                                 />
+                                </div>
                             ))}
                         </div>
                     </div>
