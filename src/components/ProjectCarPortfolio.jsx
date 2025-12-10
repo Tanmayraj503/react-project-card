@@ -47,6 +47,14 @@ const [activeCategory, setActiveCategory] = useState('major');
                 tags: ["React", "Node.js", "Express", "MongoDB"],
                 liveUrl: "https://example.com",
                 githubUrl: "https://github.com"
+            },
+        {
+                image: "dog.png",
+                title: "Dog Shower",
+                description: "A site that shower you with adorable dogs.",
+                tags: ["React", "Tailwind", "DogAPI"],
+                liveUrl: "https://dog-shower.vercel.app/dog",
+                githubUrl: "https://github.com"
             }]
 
     };
