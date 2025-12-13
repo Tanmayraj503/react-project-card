@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard.jsx";
 import { useState } from "react";
+import dogimage from "../assets/dog/dog.png";
 
 export default function ProjectCarPortfolio() {
 const [activeCategory, setActiveCategory] = useState('major');
@@ -49,9 +50,9 @@ const [activeCategory, setActiveCategory] = useState('major');
                 githubUrl: "https://github.com"
             },
         {
-                image: "dog.png",
+                image: dogimage,
                 title: "Dog Shower",
-                description: "A site that shower you with adorable dogs.",
+                description: "A delightful single-page application (SPA) that provides a dose of instant joy by showering the user with pictures of adorable dogs with a simple click.",
                 tags: ["React", "Tailwind", "DogAPI"],
                 liveUrl: "https://dog-shower.vercel.app/dog",
                 githubUrl: "https://github.com"
