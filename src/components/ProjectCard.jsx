@@ -2,17 +2,10 @@ import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
 export default function ProjectCard({ image, title, description, tags, liveUrl, githubUrl }) {
-    const tagColors = [
-        "bg-blue-100 text-blue-800",
-        "bg-green-100 text-green-800",
-        "bg-purple-100 text-purple-800",
-        "bg-pink-100 text-pink-800",
-        "bg-yellow-100 text-yellow-800",
-        "bg-orange-100 text-orange-800",
-    ];
+    
     return (
 
-        <div className="bg-[#262b3d6e] rounded-3xl shadow-lg border border-gray-600 hover:shadow-2xl hover:shadow-[#10193f] transition- overflow-hidden duration-500  hover:-translate-y-1 relative flex flex-col">
+        <div className="bg-[#a093aa27] rounded-3xl shadow-lg border border-gray-600 hover:shadow-2xl hover:shadow-[#10193f] transition- overflow-hidden duration-500  hover:-translate-y-1 relative flex flex-col mb-5">
             <div className='relative overflow-hidden'>
                 <img
                     src={image}
@@ -22,14 +15,14 @@ export default function ProjectCard({ image, title, description, tags, liveUrl, 
             </div>
             <div className='p-6'>
                 <h3 className="text-[22px] font-semibold text-white mb-2">{title}</h3>
-                <p className="text-gray-500 mb-4 font-semibold line-clamp-3">{description}</p>
+                <p className="text-gray-400 mb-4 font-semibold line-clamp-3">{description}</p>
 
                 <div className='flex flex-wrap gap-2 mb-4'>
                     {tags.map((tag, index) => (
                         <span
                             key={index}
-                            className={`text-sm font-medium px-3 py-1 rounded-full
-                    bg-[#10101d] text-white border border-gray-700`}
+                            className={`text-[12px] font-medium px-2 py-1 rounded-full
+                    bg-[#10101d] text-gray-200 border border-gray-700`}
                         >
                             {tag}
                         </span>
