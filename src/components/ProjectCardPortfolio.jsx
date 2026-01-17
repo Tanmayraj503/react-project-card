@@ -91,14 +91,14 @@ export default function ProjectCarPortfolio() {
                             <button
                                 key={category.id}
                                 onClick={() => setActiveCategory(category.id)}
-                                className={`px-6 relative py-3 font-semibold overflow-hidden group ${activeCategory === category.id
+                                className={`px-6 relative py-3 font-semibold cursor-pointer overflow-hidden group ${activeCategory === category.id
                                     ? ' text-white '
                                     : ' text-gray-500 '
                                     }`}
                             >
                                 {category.label}
                                 <span className="absolute bottom-1 bg-purple-700 h-0.5 transition-all duration-500 ease-out w-0 left-0 group-hover:w-full"></span>
-                                <span className={`ml-2 px-2 py-0.5 rounded-full text-sm ${activeCategory === category.id
+                                <span className={`ml-2 px-2 py-0.5 rounded-full  text-sm ${activeCategory === category.id
                                     ? 'bg-purple-600 text-white'
                                     : 'bg-gray-200 text-gray-500'
                                     }`}>
@@ -114,7 +114,7 @@ export default function ProjectCarPortfolio() {
                             <button
                                 key={category.id}
                                 onClick={() => setActiveCategory(category.id)}
-                                className={`px-3 py-[5px] text-[12px] rounded-2xl font-semibold relative overflow-hidden group transition-all duration-200 hover:scale-105 active:scale-95 ${activeCategory === category.id
+                                className={`px-3 py-[5px] text-[12px] rounded-2xl font-semibold relative overflow-hidden group transition-all duration-200 hover:scale-105 cursor-pointer active:scale-95 ${activeCategory === category.id
                                     ? "bg-[#8d79af] text-white"
                                     : "bg-[#0b1229de] text-gray-400"
                                     }
