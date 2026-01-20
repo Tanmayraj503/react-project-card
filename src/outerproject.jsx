@@ -5,7 +5,10 @@ import dogimage from "../src/assets/dog/dog.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import Footer from "./footer";
+import Footer from "./Footer";
+import { Scroll } from "lucide-react";
+import ScrollToTopButton from "./ScrollToTopButton";
+import Header from "./header";
 
 
 export default function ProjectCarPortfolio() {
@@ -81,33 +84,14 @@ export default function ProjectCarPortfolio() {
 
     return (
         <>
-            <section className="projectcard pt-10 pb-20 mx-auto bg-[#080E21] min-h-screen overflow-y-scroll scrollbar-hide-arrows">
-                <div className="max-w-7xl mx-auto xl:max-w-6xl">
+        <Header />
+            <section className="projectcard pt-16 pb-20 mx-auto bg-[#080E21] min-h-screen overflow-y-scroll scrollbar-hide-arrows">
+                <div className="max-w-[1380px] mx-auto ">
                     <div className="text-center mb-10">
                         <h1 className="text-[46px] font-bold text-purple-500 mb-3">My Projects</h1>
                         <p className="text-gray-400 text-lg">Showcasing my latest work and side projects</p>
                     </div>
-                    {/* <div className="lg:flex-wrap lg:justify-center lg:gap-3 lg:mb-6 lg:flex hidden ">
-                        {categories.map((category) => (
-                            <button
-                                key={category.id}
-                                onClick={() => setActiveCategory(category.id)}
-                                className={`px-6 relative py-3 font-semibold overflow-hidden group ${activeCategory === category.id
-                                    ? ' text-white '
-                                    : ' text-gray-500 '
-                                    }`}
-                            >
-                                {category.label}
-                                <span className="absolute bottom-1 bg-purple-700 h-0.5 transition-all duration-500 ease-out w-0 left-0 group-hover:w-full"></span>
-                                <span className={`ml-2 px-2 py-0.5 rounded-full text-sm ${activeCategory === category.id
-                                    ? 'bg-purple-600 text-white'
-                                    : 'bg-gray-200 text-gray-500'
-                                    }`}>
-                                    {category.count}
-                                </span>
-                            </button>
-                        ))}
-                    </div> */}
+                    
                     <div className="flex gap-2 py-auto flex-wrap lg:gap-3 lg:mb-6 overflow-x-auto scrollbar-hide-arrows bg-[#a093aa27] py-6 border border-gray-500 shadow-purple-500/10 shadow-xl rounded-2xl px-4 mx-6 mb-6 ">
                         <div className="flex justify-center items-center text-center text-white text-[14px] "><FontAwesomeIcon icon={faFilter} />
                             Filter :</div>
@@ -148,6 +132,7 @@ export default function ProjectCarPortfolio() {
                 </div>
             </section>
             <Footer />
+            <ScrollToTopButton />
         </>
     );
 } 

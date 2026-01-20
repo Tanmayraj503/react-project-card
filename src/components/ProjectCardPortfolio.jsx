@@ -145,7 +145,7 @@ export default function ProjectCarPortfolio() {
                         </div>
                     </div>
                     <div className="">
-                        <button className="px-6 py-3 font-semibold text-white bg-purple-600 lg:hidden pointer-cursor text-center block mx-auto rounded-2xl hover:bg-purple-700 transition duration-300" onClick={()=>navigate('/outerproject')}>More Projects </button>
+                        <button className="px-6 py-3 font-semibold text-white bg-purple-600 lg:hidden cursor-pointer text-center block mx-auto rounded-2xl hover:bg-purple-700 transition duration-300" onClick={()=>navigate('/outerproject')}>More Projects </button>
                     </div>
                 </div>
             </section>

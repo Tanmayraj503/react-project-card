@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -16,31 +16,31 @@ export default function Footer() {
                 <div className="w-full flex items-center text-center md:justify-center md:items-end flex-wrap flex-col gap-2">
                     <p className="text-gray-200 font-bold text-[19px] text-end">Let's Connect</p>
                     <div className="flex gap-4">
-                        <a href="https://www.youtube.com/watch?v=DQS6mU8Uhn8"
+                        <a href="https://github.com/Tanmayraj503"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="footer-icon text-gray-300 hover:text-[#1DA1F2]">
-                            <FontAwesomeIcon icon={faTwitter} />
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=DQS6mU8Uhn8"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="footer-icon text-gray-300 hover:text-[#1DA1F2]">
+                            className="footer-icon text-gray-300 hover:text-purple-900">
                             <FontAwesomeIcon icon={faGithub} />
 
                         </a>
-                        <a href="https://www.youtube.com/watch?v=DQS6mU8Uhn8"
+                        <a href="https://www.instagram.com/tanmay.raj53"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="footer-icon text-gray-300 hover:text-[#D44638]">
-                            <FontAwesomeIcon icon={faEnvelope} />
-
+                            className="footer-icon text-gray-300 hover:text-pink-600">
+                            <FontAwesomeIcon icon={faInstagram} />
                         </a>
                         <a href="https://www.youtube.com/watch?v=DQS6mU8Uhn8"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="footer-icon text-gray-300 hover:text-[#0A66C2]">
+                            className="footer-icon text-gray-300 hover:text-blue-400">
                             <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                        <a href="mailto:tanmayraj707@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="footer-icon text-gray-300 hover:text-yellow-500">
+                            <FontAwesomeIcon icon={faEnvelope} />
+
                         </a>
                     </div>
                 </div>
