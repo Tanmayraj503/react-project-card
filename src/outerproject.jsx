@@ -9,6 +9,8 @@ import Footer from "./Footer";
 import { Scroll } from "lucide-react";
 import ScrollToTopButton from "./ScrollToTopButton";
 import Header from "./header";
+import SplitText from "./SplitText";
+import AnimatedContent from './AnimatedContent'
 
 
 export default function ProjectCarPortfolio() {
@@ -82,54 +84,119 @@ export default function ProjectCarPortfolio() {
 
     const navigate = useNavigate();
 
+
+    const handleAnimationComplete = () => {
+        console.log('All letters have animated!');
+    };
+
+
+
     return (
         <>
-        <Header />
+            <Header />
             <section className="projectcard pt-16 pb-20 mx-auto bg-[#080E21] min-h-screen overflow-y-scroll scrollbar-hide-arrows">
                 <div className="max-w-[1380px] mx-auto ">
                     <div className="text-center mb-10">
-                        <h1 className="text-[46px] font-bold text-purple-500 mb-3">My Projects</h1>
-                        <p className="text-gray-400 text-lg">Showcasing my latest work and side projects</p>
-                    </div>
-                    
-                    <div className="flex gap-2 py-auto flex-wrap lg:gap-3 lg:mb-6 overflow-x-auto scrollbar-hide-arrows bg-[#a093aa27] py-6 border border-gray-500 shadow-purple-500/10 shadow-xl rounded-2xl px-4 mx-6 mb-6 ">
-                        <div className="flex justify-center items-center text-center text-white text-[14px] "><FontAwesomeIcon icon={faFilter} />
-                            Filter :</div>
-                        {categories.map((category) => (
-                            <button
-                                key={category.id}
-                                onClick={() => setActiveCategory(category.id)}
-                                className={`px-3 py-[5px] text-[12px] rounded-2xl font-semibold relative overflow-hidden group cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95 ${activeCategory === category.id
-                                    ? "bg-[#8d79af] text-white"
-                                    : "bg-[#0b1229de] text-gray-400"
-                                    }
-    `}
-                            >
-                                {category.label}
-                            </button>
-                        ))}
+
+                        <SplitText
+                            text="My Projects"
+                            className="text-[49px] font-bold text-purple-500 "
+                            delay={40}
+                            duration={1}
+                            ease="power3.out"
+                            splitType="chars"
+                            from={{ opacity: 0, y: 40 }}
+                            to={{ opacity: 1, y: 0 }}
+                            threshold={0.1}
+                            rootMargin="-100px"
+                            textAlign="center"
+                            onLetterAnimationComplete={handleAnimationComplete}
+                            showCallback={false}
+                        />
+                        <AnimatedContent
+                            distance={40}
+                            direction="vertical"
+                            reverse={false}
+                            duration={0.9}
+                            ease="power3.out"
+                            initialOpacity={0}
+                            animateOpacity
+                            scale={1}
+                            threshold={0.1}
+                            delay={0}
+                        >
+                            <p className="text-gray-400 text-lg">Showcasing my latest work and side projects</p>
+
+                        </AnimatedContent>
 
                     </div>
-                    <div className="overflow-y-auto pr-2">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6  pt-5 ">
-                            {(activeCategory === "all"
-                                ? allProjects
-                                : Projects[activeCategory]
-                            ).map((project, index) => (
-                                <div key={index} >
-                                    <ProjectCard
-                                        image={project.image}
-                                        title={project.title}
-                                        description={project.description}
-                                        tags={project.tags}
-                                        liveUrl={project.liveUrl}
-                                        githubUrl={project.githubUrl}
-                                    />
-                                </div>
+
+                    <AnimatedContent
+                        distance={40}
+                        direction="vertical"
+                        reverse={false}
+                        duration={1.2}
+                        ease="power3.out"
+                        initialOpacity={0}
+                        animateOpacity
+                        scale={1}
+                        threshold={0.1}
+                        delay={0}
+                    >
+                        <div className="flex gap-2 py-auto flex-wrap lg:gap-3 lg:mb-6 overflow-x-auto scrollbar-hide-arrows bg-[#a093aa27] py-6 border border-gray-500 shadow-purple-500/10 shadow-xl rounded-2xl px-4 mx-6 mb-6 ">
+                            <div className="flex justify-center items-center text-center text-white text-[14px] "><FontAwesomeIcon icon={faFilter} />
+                                Filter :</div>
+                            {categories.map((category) => (
+                                <button
+                                    key={category.id}
+                                    onClick={() => setActiveCategory(category.id)}
+                                    className={`px-3 py-[5px] text-[12px] rounded-2xl font-semibold relative overflow-hidden group cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95 ${activeCategory === category.id
+                                        ? "bg-[#8d79af] text-white"
+                                        : "bg-[#0b1229de] text-gray-400"
+                                        }
+                            `}
+                                >
+                                    {category.label}
+                                </button>
                             ))}
                         </div>
-                    </div>
+                    </AnimatedContent>
+
+                    <AnimatedContent
+                        distance={20}
+                        direction="vertical"
+                        reverse={false}
+                        duration={0.9}
+                        ease="power3.out"
+                        initialOpacity={0}
+                        animateOpacity
+                        scale={1}
+                        threshold={0.1}
+                        delay={0}
+                    >
+
+                        <div className="overflow-y-auto pr-2">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6  pt-5 ">
+                                {(activeCategory === "all"
+                                    ? allProjects
+                                    : Projects[activeCategory]
+                                ).map((project, index) => (
+                                    <div key={index} >
+                                        <ProjectCard
+                                            image={project.image}
+                                            title={project.title}
+                                            description={project.description}
+                                            tags={project.tags}
+                                            liveUrl={project.liveUrl}
+                                            githubUrl={project.githubUrl}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </AnimatedContent>
                 </div>
+
             </section>
             <Footer />
             <ScrollToTopButton />
