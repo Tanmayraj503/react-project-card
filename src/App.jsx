@@ -2,8 +2,8 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-import OuterProject from './outerproject.jsx';
-
+import OuterProject from './Projects.jsx';
+import Academics from './Academics.jsx';
 import Home from './Home.jsx';
 
 function App() {
@@ -12,7 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="outerproject" element={<OuterProject />} />
+          <Route path="Projects" element={<OuterProject />} />
+          <Route path="Academics" element={<Academics />} />
         </Routes>
       </BrowserRouter>
     </>
