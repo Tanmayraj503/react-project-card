@@ -81,7 +81,7 @@ export default function Header() {
                     </button>
                 </div>
 
-                <div className={`lg:hidden top-12 h-svh absolute w-65 bg-[#080e21] shadow-md transition-all duration-300 ease-in-out ${clicked ? "right-0" : "-right-full"}`}>
+                <div className={`lg:hidden top-12 h-svh absolute w-65 bg-[#080e21] shadow-md transition-all duration-300 ease-in-out ${clicked ? "-right-10" : "-right-full"}`}>
                     <nav className="flex flex-col gap-10 py-6 px-8 text-xl">
                         {links.map((item) => (
                             <div key={item} className="relative group w-fit">
