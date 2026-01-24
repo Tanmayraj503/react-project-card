@@ -2,9 +2,10 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-import OuterProject from './Projects.jsx';
-import Academics from './Academics.jsx';
-import Home from './Home.jsx';
+import ProjectCarPortfolio from './components/Projects.jsx';
+import Academics from './components/Academics.jsx';
+import Home from './components/Home.jsx';
+import Resume from './components/Resume.jsx';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="Projects" element={<OuterProject />} />
+          <Route path="Projects" element={<ProjectCarPortfolio />} />
           <Route path="Academics" element={<Academics />} />
+          <Route path='Resume' element={<Resume />} />
         </Routes>
       </BrowserRouter>
     </>

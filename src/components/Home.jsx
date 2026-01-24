@@ -1,6 +1,6 @@
 import React from "react";
-import ProjectCarPortfolio from "./components/ProjectCardPortfolio.jsx";
-import Hello from "./Hello.jsx";
+import ProjectCarPortfolio from "./ProjectCardPortfolio.jsx";
+
 import Header from "./header.jsx";
 export default function Home(){
     return(

@@ -1,7 +1,7 @@
 import React from "react";
-import ProjectCard from "./components/ProjectCard";
+import ProjectCard from "./ProjectCard";
 import { useState } from "react";
-import dogimage from "../src/assets/dog/dog.png";
+import dogimage from "../assets/dog/dog.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
