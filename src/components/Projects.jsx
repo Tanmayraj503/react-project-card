@@ -94,7 +94,7 @@ export default function ProjectCarPortfolio() {
     return (
         <>
             <Header />
-            <section className="projectcard pt-16 lg:pt-30 pb-20 mx-auto bg-[#080E21] min-h-screen overflow-y-scroll scrollbar-hide-arrows">
+            <section className="projectcard pt-16 lg:pt-26 pb-20 mx-auto bg-[#080E21] min-h-screen overflow-y-scroll scrollbar-hide-arrows">
                 <div className="max-w-[1380px] mx-auto ">
                     <div className="text-center mb-10">
 
