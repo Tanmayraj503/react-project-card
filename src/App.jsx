@@ -6,6 +6,7 @@ import ProjectCarPortfolio from './components/Projects.jsx';
 import Academics from './components/Academics.jsx';
 import Home from './components/Home.jsx';
 import Resume from './components/Resume.jsx';
+import About from './components/About.jsx';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="Projects" element={<ProjectCarPortfolio />} />
           <Route path="Academics" element={<Academics />} />
           <Route path='Resume' element={<Resume />} />
+          <Route path='About' element={<About />} />
         </Routes>
       </BrowserRouter>
     </>
