@@ -15,7 +15,7 @@ import ScrollToTopButton from './ScrollToTopButton';
 const qualifications = [
     {
         degree: "Bachelor of Tehcnology",
-        institution: "Guru Gobind Singh Indraprastha University",
+        institution: "Guru Gobind Singh Indraprstha University",
         stream: "Computer Science and Engineering",
         year: "2023 - Present",
         location: "Delhi, India",

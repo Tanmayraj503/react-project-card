@@ -7,6 +7,7 @@ import Academics from './components/Academics.jsx';
 import Home from './components/Home.jsx';
 import Resume from './components/Resume.jsx';
 import About from './components/About.jsx';
+import Contact from './components/Contact.jsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="Academics" element={<Academics />} />
           <Route path='Resume' element={<Resume />} />
           <Route path='About' element={<About />} />
+          <Route path='Contact' element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </>
