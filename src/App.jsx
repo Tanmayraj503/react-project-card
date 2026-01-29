@@ -8,11 +8,13 @@ import Home from './components/Home.jsx';
 import Resume from './components/Resume.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Projects" element={<ProjectCarPortfolio />} />

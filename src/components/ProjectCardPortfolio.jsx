@@ -5,11 +5,8 @@ import dogimage from "../assets/dog/dog.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import { Scroll } from "lucide-react";
-import ScrollToTopButton from "./ScrollToTopButton.jsx";
 import SplitText from "./SplitText.jsx"
 import AnimatedContent from './AnimatedContent.jsx'
-import Footer from "./Footer.jsx";
 
 
 export default function ProjectCarPortfolio() {
@@ -214,8 +211,6 @@ export default function ProjectCarPortfolio() {
                     </div>
                 </div>
             </section>
-            <Footer />
-            <ScrollToTopButton />
         </>
     );
 } 
