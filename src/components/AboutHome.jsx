@@ -15,7 +15,7 @@ export default function AboutHome() {
     ];
 
     return (
-        <section className="About-home mt-320 px-6 py-16">
+        <section className="About-home mt-32 px-8 py-18">
             <div className="text-center">
                 <motion.h1 className="md:text-[48px] text-4xl font-bold text-purple-500 mb-4"
                     initial={{ opacity: 0, y: 20 }}
