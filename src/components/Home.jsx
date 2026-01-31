@@ -4,11 +4,15 @@ import Header from "./header.jsx";
 import ContactHome from "./ContactHome.jsx";
 import Footer from "./Footer.jsx";
 import ScrollToTopButton from "./ScrollToTopButton.jsx";
+import Techstack from "./Techstack.jsx";
+import AboutHome from "./AboutHome.jsx";
 
 export default function Home() {
     return (
         <>
             <Header />
+            <AboutHome />
+            <Techstack />
             <ProjectCarPortfolio />
             <ContactHome />
             <Footer />
