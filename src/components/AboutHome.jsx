@@ -43,7 +43,7 @@ export default function AboutHome() {
                                 delay: index * 0.2,
                             }}
                             className="bg-[#1C1F36] rounded-lg p-6 border border-gray-700
-                             flex flex-col gap-4 text-white font-semibold"
+                             flex flex-col gap-4 text-white font-semibold shadow-xl hover:shadow-purple-900/20 transition-shadow duration-300"
                         >
                             <div className="flex justify-center bg-[#26727c48] rounded-lg w-16 h-16 mx-auto items-center mb-4">
                                 <p className="text-cyan-400  text-4xl">{item.icon}</p>
@@ -59,7 +59,7 @@ export default function AboutHome() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, amount: 0.5 }}
                                 transition={{ duration: 0.8, ease: "easeOut" }}>
-                                <button className="bg-linear-to-r from-cyan-500 to-blue-500 text-white font-bold py-3 px-6 rounded-xl transition duration-300 flex items-center justify-center gap-3 hover:shadow-lg hover:shadow-cyan-900/60 hover:-translate-y-0.5" onClick={() => navigate("/about")}>
+                                <button className="bg-linear-to-r from-cyan-500 to-blue-500 text-white font-bold py-3 px-6 rounded-xl transition duration-300 flex items-center justify-center gap-3 hover:shadow-lg mt-4 hover:shadow-cyan-900/60 hover:-translate-y-0.5" onClick={() => navigate("/about")}>
                                     More About Me <FaLongArrowAltRight />
                                 </button>
                             </motion.div>
