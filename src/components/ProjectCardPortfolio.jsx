@@ -2,6 +2,12 @@ import React from "react";
 import ProjectCard from "./ProjectCard.jsx";
 import { useState } from "react";
 import dogimage from "../assets/dog/dog.png";
+import QRCODE from "../assets/QR_code_gen.png";
+import TODO from "../assets/To_do.png";
+import Random from "../assets/Random_color.png";
+import CAl from "../assets/Calc.png";
+import CAt from "../assets/cat.png";
+import GENERATOR from "../assets/gen.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
@@ -12,59 +18,76 @@ import AnimatedContent from './AnimatedContent.jsx'
 export default function ProjectCarPortfolio() {
     const [activeCategory, setActiveCategory] = useState('all');
     const Projects = {
-        major: [
-            {
-                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-                title: "E-Commerce Platform",
-                description: "A full-stack e-commerce platform with payment integration, product management, and user authentication. Built with modern technologies.",
-                tags: ["React", "Node.js", "MongoDB"],
-                liveUrl: "https://example.com",
-                githubUrl: "https://github.com"
-            },
-            {
-                image: "https://images.unsplash.com/photo-1506765515384-028b60a970df?w=600&h=400&fit=crop",
-                title: "Social Media App",
-                description: "A social media application that allows users to connect, share posts, and interact with each other. Features real-time notifications and messaging.",
-                tags: ["React", "Firebase", "Socket.io"],
-                liveUrl: "https://example.com",
-                githubUrl: "https://github.com"
-            }],
-        intermediate: [
-            {
-                image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
-                title: "Project Management Tool",
-                description: "A project management tool designed to help teams collaborate, track progress, and manage tasks efficiently. Includes Kanban boards and Gantt charts.",
-                tags: ["React", "Node.js", "MongoDB"],
-                liveUrl: "https://example.com",
-                githubUrl: "https://github.com"
-            },
-            {
-                image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop",
-                title: "Personal Blog",
-                description: "A personal blog platform where users can create, edit, and publish blog posts. Features a rich text editor and SEO optimization.",
-                tags: ["React", "Gatsby", "GraphQL"],
-                liveUrl: "https://example.com",
-                githubUrl: "https://github.com"
-            }],
-        minor: [
-            {
-                image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
-                title: "Fitness Tracker",
-                description: "A fitness tracking application that allows users to log workouts, monitor progress, and set fitness goals. Integrates with wearable devices.",
-                tags: ["React", "Node.js", "Express", "MongoDB"],
-                liveUrl: "https://example.com",
-                githubUrl: "https://github.com"
-            },
-            {
-                image: dogimage,
-                title: "Dog Shower",
-                description: "A delightful single-page application (SPA) that provides a dose of instant joy by showering the user with pictures of adorable dogs with a simple click.",
-                tags: ["React", "Tailwind", "DogAPI"],
-                liveUrl: "https://dog-shower.vercel.app/dog",
-                githubUrl: "https://github.com"
-            }]
-
-    };
+            major: [
+                {
+                    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+                    title: "E-Commerce Platform",
+                    description: "A full-stack e-commerce platform with payment integration, product management, and user authentication. Built with modern technologies.",
+                    tags: ["React", "Node.js", "MongoDB"],
+                    liveUrl: "https://example.com",
+                    githubUrl: "https://github.com"
+                }],
+            intermediate: [
+                {
+                    image: GENERATOR,
+                    title: "Random Dog and Cat Shower",
+                    description: "A random dog and cat generator that generates random dog and cat images with a click. Simple and easy to use interface.",
+                    tags: ["React", "Tailwind CSS"],
+                    liveUrl: "https://dog-shower.vercel.app/dog",
+                    githubUrl: "https://github.com/Tanmayraj503/Dog-Shower"
+                }],
+            minor: [
+                {
+                    image: QRCODE,
+                    title: "QR code Generator",
+                    description: "A QR Code generator application that allows users to create QR codes for various purposes. Simple and easy to use interface.",
+                    tags: ["HTMl", "CSS", "JavaScript"],
+                    liveUrl: "https://tanmayraj503.github.io/QR-code-generator/",
+                    githubUrl: "https://github.com/Tanmayraj503/QR-code-generator"
+                },
+                {
+                    image: dogimage,
+                    title: "Dog Shower",
+                    description: "A delightful single-page application (SPA) that provides a dose of instant joy by showering the user with pictures of adorable dogs with a simple click.",
+                    tags: ["React", "Tailwind", "DogAPI"],
+                    liveUrl: "https://dog-shower.vercel.app/dog",
+                    githubUrl: "https://github.com/Tanmayraj503/Dog-Shower"
+                },
+                {
+                    image: CAt,
+                    title: "Cat Shower",
+                    description: "A delightful single-page application (SPA) that provides a dose of instant joy by showering the user with pictures of adorable cats with a simple click.",
+                    tags: ["React", "Tailwind", "CatAPI"],
+                    liveUrl: "https://dog-shower.vercel.app/cat",
+                    githubUrl: "https://github.com/Tanmayraj503/Dog-Shower"
+                },
+                {
+                    image: TODO,
+                    title: "To-Do List App",
+                    description: "A simple and intuitive to-do list application that helps users organize their daily tasks. Features task creation, editing, and deletion.",
+                    tags: ["HTMl", "CSS", "JavaScript"],
+                    liveUrl: "https://tanmayraj503.github.io/To-do-list/",
+                    githubUrl: "https://github.com/Tanmayraj503/To-do-list"
+                },
+                {
+                    image: Random,
+                    title: "Random Color Generator",
+                    description: "A simple and intuitive random color generator that generates random colors with a click. Users can copy the color code easily.",
+                    tags: ["HTMl", "CSS", "JavaScript"],
+                    liveUrl: "https://tanmayraj503.github.io/random-color/",
+                    githubUrl: "https://github.com/Tanmayraj503/random-color"
+                },
+                {
+                    image: CAl,
+                    title: "Calculator App",
+                    description: "A functional calculator application that performs basic arithmetic operations. Features a clean and user-friendly interface.",
+                    tags: ["HTMl", "CSS", "JavaScript"],
+                    liveUrl: "https://tanmayraj503.github.io/simple-calculator/",
+                    githubUrl: "https://github.com/Tanmayraj503/simple-calculator"
+                }
+            ]
+    
+        };
     const allProjects = [
         ...Projects.major,
         ...Projects.intermediate,

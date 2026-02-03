@@ -1,29 +1,33 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import Loader from './components/Loader.jsx';
+const ProjectCardPortfolio = lazy(() => import('./components/Projects.jsx'));
+const Academics = lazy(() => import('./components/Academics.jsx'));
+const Home = lazy(() => import('./components/Home.jsx'));
+const Resume = lazy(() => import('./components/Resume.jsx'));
+const About = lazy(() => import('./components/About.jsx'));
+const Contact = lazy(() => import('./components/Contact.jsx'));
+const ScrollToTop = lazy(() => import('./components/ScrollToTop.jsx'));
 
 
-import ProjectCarPortfolio from './components/Projects.jsx';
-import Academics from './components/Academics.jsx';
-import Home from './components/Home.jsx';
-import Resume from './components/Resume.jsx';
-import About from './components/About.jsx';
-import Contact from './components/Contact.jsx';
-import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="Projects" element={<ProjectCarPortfolio />} />
-          <Route path="Academics" element={<Academics />} />
-          <Route path='Resume' element={<Resume />} />
-          <Route path='About' element={<About />} />
-          <Route path='Contact' element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+      <Suspense fallback={<Loader />}>
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="Projects" element={<ProjectCardPortfolio />} />
+            <Route path="Academics" element={<Academics />} />
+            <Route path='Resume' element={<Resume />} />
+            <Route path='About' element={<About />} />
+            <Route path='Contact' element={<Contact />} />
+          </Routes>
+        </BrowserRouter>
+      </Suspense>
     </>
   )
 }
