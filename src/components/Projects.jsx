@@ -7,6 +7,7 @@ import TODO from "../assets/To_do.png";
 import Random from "../assets/Random_color.png";
 import CAl from "../assets/Calc.png";
 import CAt from "../assets/cat.png";
+import PORT from "../assets/portfolio.png"
 import GENERATOR from "../assets/gen.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
@@ -23,14 +24,23 @@ export default function ProjectCardPortfolio() {
     const [activeCategory, setActiveCategory] = useState('all');
     const Projects = {
         major: [
+            // {
+            //     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+            //     title: "E-Commerce Platform",
+            //     description: "A full-stack e-commerce platform with payment integration, product management, and user authentication. Built with modern technologies.",
+            //     tags: ["React", "Node.js", "MongoDB"],
+            //     liveUrl: "https://example.com",
+            //     githubUrl: "https://github.com"
+            // },
             {
-                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-                title: "E-Commerce Platform",
-                description: "A full-stack e-commerce platform with payment integration, product management, and user authentication. Built with modern technologies.",
-                tags: ["React", "Node.js", "MongoDB"],
-                liveUrl: "https://example.com",
-                githubUrl: "https://github.com"
-            }],
+                image: PORT,
+                title: "Personal Portfolio",
+                description: "A responsive personal portfolio website showcasing my projects, skills, and experience. Features smooth animations, dark theme design, and easy navigation to highlight my work as a developer.",
+                tags: ["React", "Tailwind CSS"],
+                liveUrl: "https://Rajtanportfolio.vercel.app/dog",
+                githubUrl: "https://github.com/Tanmayraj503"
+            }
+        ],
         intermediate: [
             {
                 image: GENERATOR,
@@ -117,13 +127,13 @@ export default function ProjectCardPortfolio() {
     return (
         <>
             <Header />
-            <section className="projectcard pt-16 lg:pt-26 pb-20 mx-auto bg-[#080E21] min-h-screen overflow-y-scroll scrollbar-hide-arrows">
+            <section className="projectcard pt-28 lg:pt-30 pb-24 mx-auto bg-[#080E21] min-h-screen overflow-y-scroll scrollbar-hide-arrows">
                 <div className="max-w-[1380px] mx-auto ">
                     <div className="text-center mb-10">
 
                         <SplitText
                             text="My Projects"
-                            className="text-[49px] font-bold text-purple-500 "
+                            className="md:text-[48px] text-[38px] font-bold mx-3 text-purple-500 "
                             delay={40}
                             duration={1}
                             ease="power3.out"
@@ -148,7 +158,7 @@ export default function ProjectCardPortfolio() {
                             threshold={0.1}
                             delay={0}
                         >
-                            <p className="text-gray-400 text-lg">Showcasing my latest work and side projects</p>
+                            <p className="text-gray-400 mx-4 text-lg">Showcasing my latest work and side projects</p>
 
                         </AnimatedContent>
 

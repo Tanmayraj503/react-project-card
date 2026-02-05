@@ -54,7 +54,7 @@ export default function Resume() {
                     <div className="text-center px-4">
                         <SplitText
                             text="Professional Experience"
-                            className="mb-4 pb-2 font-bold text-purple-500 text-4xl md:text-5xl "
+                            className="mb-4 pb-2 font-bold text-purple-500 md:text-[48px] text-[38px] "
                             delay={30}
                             duration={1}
                             ease="power3.out"
@@ -79,7 +79,7 @@ export default function Resume() {
                             threshold={0.1}
                             delay={0}
                         >
-                            <p className="text-gray-400 text-base md:text-lg max-w-3xl mx-auto">
+                            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
                                 I'm an aspiring developer specializing in web development, eager to contribute my skills and grow in a dynamic team environment.
                             </p>
                         </AnimatedContent>
@@ -96,7 +96,7 @@ export default function Resume() {
                         threshold={0.1}
                         delay={0}
                     >
-                        <div className="download-button flex justify-center mt-12 mb-6 items-center bg-purple-500 text-white rounded-xl md:w-54 md:h-14 h-12 w-46 mx-auto hover:bg-purple-600 md:text-lg transition-colors">
+                        <div className="download-button flex justify-center mt-12 mb-6 items-center bg-linear-to-r from-cyan-500 to-blue-500 text-white rounded-xl md:w-54 md:h-14 h-12 w-46 mx-auto hover:bg-purple-600 md:text-lg transition-colors">
                             <a 
                             href=""
                             download='Resume_Tanmay_Raj.pdf'

@@ -15,7 +15,7 @@ export default function AboutHome() {
     ];
 
     return (
-        <section className="About-home mt-32 px-8 py-18">
+        <section className="About-home bg-[#0f1021bb] px-4  py-20">
             <div className="text-center">
                 <motion.h1 className="md:text-[48px] text-4xl font-bold text-purple-500 mb-4"
                     initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ export default function AboutHome() {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}>
                     Who I Am</motion.h1>
-                <motion.p className="text-gray-400 mx-auto max-w-2xl text-sm md:text-lg"
+                <motion.p className="text-gray-400 mx-auto max-w-2xl text-lg"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
@@ -49,7 +49,7 @@ export default function AboutHome() {
                                 <p className="text-cyan-400  text-4xl">{item.icon}</p>
                             </div>
                             <h3 className="text-2xl text-center text-purple-500 font-bold">{item.title}</h3>
-                            <p className="text-gray-400">{item.description}</p>
+                            <p className="text-gray-400 text-center">{item.description}</p>
                         </motion.div>
                     ))}
                 </motion.div>

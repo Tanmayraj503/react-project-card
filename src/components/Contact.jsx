@@ -74,7 +74,7 @@ export default function Contact() {
                     <div className="text-center px-4">
                         <SplitText
                             text="Let's Get In Touch"
-                            className="mb-4 pb-2 font-bold text-purple-500 text-4xl md:text-5xl "
+                            className="mb-4 pb-2 font-bold text-purple-500 md:text-[48px] text-[38px]"
                             delay={30}
                             duration={1}
                             ease="power3.out"
@@ -99,7 +99,7 @@ export default function Contact() {
                             threshold={0.1}
                             delay={0}
                         >
-                            <p className="text-gray-400  text-lg md:text-xl max-w-3xl mx-auto">
+                            <p className="text-gray-400  text-lg max-w-3xl mx-auto">
                                 Feel free to reach out to me for collaborations, inquiries, or just to say hello! You can contact me via email or connect with me on social media platforms.
                             </p>
                         </AnimatedContent>
@@ -122,14 +122,14 @@ export default function Contact() {
                                 <div className="mt-4 space-y-4 mb-6">
                                     <div className="flex items-center bg-[#0b122967] gap-4 p-2 rounded-xl border border-gray-800">
                                         <span className="text-purple-400 bg-[#804c9836] rounded-lg h-10 items-center flex justify-center w-10"><CiMail className="text-2xl" /></span>
-                                        <div className="flex flex-col  ">
+                                        <div className="flex flex-col text-sm sm:text-base ">
                                             <h2 className="font-semibold text-gray-300">Email</h2>
                                             <p className="text-gray-400 mb-2">tanmayraj707@gmail.com</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center bg-[#0b122966] gap-4 p-2 rounded-xl border border-gray-800">
                                         <span className="text-purple-400 bg-[#804c9836] rounded-lg h-10 items-center flex justify-center w-10"><CiLocationOn className="text-2xl" /></span>
-                                        <div className="flex flex-col">
+                                        <div className="flex flex-col text-sm sm:text-base">
                                             <h2 className="font-semibold text-gray-300">Location</h2>
                                             <p className="text-gray-400 mb-2">New Delhi, India</p>
                                         </div>
@@ -231,7 +231,7 @@ export default function Contact() {
                                         </div>
                                     </div>
                                     <div className="button">
-                                        <button className="bg-purple-600 hover:bg-purple-700 text-white  py-3 px-4 rounded-xl w-full flex items-center justify-center gap-2 text-lg"
+                                        <button className="bg-purple-600 cursor-pointer hover:bg-purple-700 text-white  py-3 px-4 rounded-xl w-full flex items-center justify-center gap-2 text-lg"
                                             type="submit">
                                             <FaPaperPlane /> Send Message
                                         </button>

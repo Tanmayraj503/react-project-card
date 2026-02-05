@@ -5,31 +5,33 @@ export default function Techstack() {
   const skills = [
     { name: "JavaScript", percent: 75 },
     { name: "React", percent: 80 },
-    { name: "Tailwind CSS", percent: 70 },
+    { name: "Tailwind CSS", percent: 90 },
     { name: "Node.js", percent: 65 },
+    { name: "MongoDB", percent: 90},
+    { name: "MySQL", percent: 90}
   ];
 
   return (
-    <section className="mt-32 px-6 py-16">
+    <section className=" bg-[#080e2199] px-4 py-20">
       {/* Section heading */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.6 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-center mb-12"
+        className="text-center lg:mb-4"
       >
-        <h1 className="text-purple-500 md:text-[48px] text-4xl font-bold mb-2">
+        <h1 className="text-purple-500 md:text-[48px] text-[38px] font-bold mb-2">
           Tech Stack
         </h1>
-        <p className="text-gray-400 max-w-xl mx-auto text-sm md:text-lg">
+        <p className="text-gray-400 max-w-xl mx-auto text-lg">
           A collection of technologies I work with to build web applications and
           solve complex problems.
         </p>
       </motion.div>
 
       {/* Tech cards */}
-      <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-7">
+      <div className="max-w-3xl lg:px-8 py-10 md:py-18  md:text-lg mx-auto grid md:grid-cols-2 gap-7">
         {skills.map((skill, index) => (
           <motion.div
             key={skill.name}

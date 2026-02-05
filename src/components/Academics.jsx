@@ -91,7 +91,7 @@ export default function Academics() {
                             threshold={0.1}
                             delay={0}
                         >
-                            <p className="text-gray-400 text-base md:text-lg max-w-3xl mx-auto">
+                            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
                                 My academic journey, courses, and educational achievements that have shaped my technical expertise.
                             </p>
                         </AnimatedContent>

@@ -5,7 +5,7 @@ import Footer from './Footer';
 import ProfileCard from './ProfileCard';
 import SplitText from './SplitText';
 import AnimatedContent from './AnimatedContent';
-import DogImage from '../assets/dog/dog.png';
+import PP from '../assets/pp.jpeg'
 
 const handleAnimationComplete = () => {
     console.log('All letters have animated!');
@@ -74,7 +74,7 @@ export default function About() {
                             delay={0}
                         >
                             <div>
-                                <img src={DogImage} alt="Dog" className='lg:h-100 lg:w-200 rounded-2xl' />
+                                <img src={PP} alt="Profile Picture" className='lg:h-100 lg:w-200 object-fill rounded-2xl' />
                             </div>
                         </AnimatedContent>
                         <AnimatedContent
