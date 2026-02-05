@@ -37,7 +37,7 @@ export default function ProjectCardPortfolio() {
                 title: "Personal Portfolio",
                 description: "A responsive personal portfolio website showcasing my projects, skills, and experience. Features smooth animations, dark theme design, and easy navigation to highlight my work as a developer.",
                 tags: ["React", "Tailwind CSS"],
-                liveUrl: "https://Rajtanportfolio.vercel.app/dog",
+                liveUrl: "https://rajtanportfolio.vercel.app/dog",
                 githubUrl: "https://github.com/Tanmayraj503"
             }
         ],

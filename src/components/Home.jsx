@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./header.jsx";
-import Hero from "./hero.jsx";
+import Hero from "./Hero.jsx";
 import AboutHome from "./AboutHome.jsx";
 import Techstack from "./Techstack.jsx";
 import ProjectCarPortfolio from "./ProjectCardPortfolio.jsx";
