@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import AnimatedContent from './AnimatedContent'
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = React.useState(false);
@@ -22,6 +23,8 @@ export default function Header() {
     }, []);
 
     const links = ["Home", "About", "Academics", "Projects", "Resume", "Contact"];
+
+    const navigate = useNavigate();
 
     return (
         <>
@@ -43,7 +46,7 @@ export default function Header() {
                 >
                     {/* Desktop Navigation */}
                     <div className="hidden lg:flex justify-between items-center max-w-[1360px] mx-auto">
-                        <div className="text-3xl font-bold text-purple-400 cursor-pointer">TR.</div>
+                        <div className="text-3xl font-bold text-purple-400 cursor-pointer" onClick={() => navigate('/')}>TR.</div>
 
                         <nav className="gap-7 flex">
                             {links.map((item) => (

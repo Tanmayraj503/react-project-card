@@ -14,6 +14,8 @@ import { MdPrivateConnectivity } from "react-icons/md";
 
 export default function Hero() {
     const navigate = useNavigate();
+
+    const isMObile = window.innerWidth <768;
     return (
         <section className="Hero bg-[#080e2199] px-4 md:px-8 py-20">
             <div className="md:px-6 mt-3 lg:mt-6 py-22 lg:py-30">
@@ -53,7 +55,7 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.6 }}
-                            transition={{ delay: 0.37, duration: 0.6, ease: "easeOut" }}>
+                            transition={{ delay:isMObile? 0.34 : 0.37, duration:isMObile? 0.5 : 0.6, ease: "easeOut" }}>
                             <button className="bg-linear-to-r from-cyan-500 to-blue-500 text-white font-bold md:py-3 md:px-7 py-2 px-6 rounded-lg cursor-pointer md:rounded-xl transition duration-300 hover:shadow-lg hover:shadow-cyan-900/60 hover:-translate-y-0.5" onClick={() => navigate("/contact")}>Get in Touch</button>
                             <button className="bg-linear-to-r from-cyan-500 to-blue-500 text-white font-bold md:py-3 md:px-6 py-2 px-5 rounded-lg md:rounded-xl cursor-pointer transition duration-300 hover:shadow-lg hover:shadow-cyan-900/60 hover:-translate-y-0.5" onClick={() => navigate("/projects")}>
                                 View Projects
