@@ -18,7 +18,7 @@ export default function Hero() {
     const isMObile = window.innerWidth <768;
     return (
         <section className="Hero bg-[#080e2199] px-4 md:px-8 py-20">
-            <div className="md:px-6 mt-3 lg:mt-6 py-22 lg:py-30">
+            <div className="md:px-6 mt-3 lg:mt-6 py-16 lg:py-30">
                 <div className="grid xl:grid-cols-2 gap-12 xl:gap-16">
                     <div className="flex flex-col justify-center items-start text-white">
                         <motion.p className="text-cyan-400 bg-[#26727c48] rounded-full px-3 text-sm max-w-[180px] py-1 mb-5"
