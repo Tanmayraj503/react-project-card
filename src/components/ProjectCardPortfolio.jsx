@@ -14,6 +14,7 @@ import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import AnimatedContent from './AnimatedContent.jsx'
+import QL from "../assets/quick-legal.png";
 
 
 export default function ProjectCarPortfolio() {
@@ -34,6 +35,14 @@ export default function ProjectCarPortfolio() {
                 description: "A responsive personal portfolio website showcasing my projects, skills, and experience. Features smooth animations, dark theme design, and easy navigation to highlight my work as a developer.",
                 tags: ["React", "Tailwind CSS"],
                 liveUrl: "https://rajtanportfolio.vercel.app/dog",
+                githubUrl: "https://github.com/Tanmayraj503"
+            }, 
+            {
+                image: QL,
+                title: "Quick-Legal",
+                description: "AI-powered legal document analyzer that evaluates Terms of Service and contracts for hidden risks. Generates a trust score, highlights risky clauses, and explains potential legal concerns in simple language.",
+                tags: ["React", "Node.js", "Tailwind", "Gemini API"],
+                liveUrl: "https://quick-legal.vercel.app/",
                 githubUrl: "https://github.com/Tanmayraj503"
             }
         ],

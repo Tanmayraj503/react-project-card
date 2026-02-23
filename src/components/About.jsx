@@ -5,7 +5,7 @@ import Footer from './Footer';
 import ProfileCard from './ProfileCard';
 import SplitText from './SplitText';
 import AnimatedContent from './AnimatedContent';
-import PP from '../assets/pp.jpeg'
+import PP from '../assets/profile_photo_final_ig.jpeg'
 
 const handleAnimationComplete = () => {
     console.log('All letters have animated!');

@@ -18,6 +18,7 @@ import ScrollToTopButton from "./ScrollToTopButton";
 import Header from "./header";
 import SplitText from "./SplitText";
 import AnimatedContent from './AnimatedContent'
+import QL from "../assets/quick-legal.png";
 
 
 export default function ProjectCardPortfolio() {
@@ -38,6 +39,14 @@ export default function ProjectCardPortfolio() {
                 description: "A responsive personal portfolio website showcasing my projects, skills, and experience. Features smooth animations, dark theme design, and easy navigation to highlight my work as a developer.",
                 tags: ["React", "Tailwind CSS"],
                 liveUrl: "https://rajtanportfolio.vercel.app/dog",
+                githubUrl: "https://github.com/Tanmayraj503"
+            },
+            {
+                image: QL,
+                title: "Quick-Legal",
+                description: "AI-powered legal document analyzer that evaluates Terms of Service and contracts for hidden risks. Generates a trust score, highlights risky clauses, and explains potential legal concerns in simple language.",
+                tags: ["React", "Node.js", "Tailwind", "Gemini API"],
+                liveUrl: "https://quick-legal.vercel.app/",
                 githubUrl: "https://github.com/Tanmayraj503"
             }
         ],
