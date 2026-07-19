@@ -5,7 +5,7 @@ import Footer from './Footer';
 import ProfileCard from './ProfileCard';
 import SplitText from './SplitText';
 import AnimatedContent from './AnimatedContent';
-import PP from '../assets/profile_photo_final_ig.jpeg'
+import PP from '../assets/pfp.jpeg';
 
 const handleAnimationComplete = () => {
     console.log('All letters have animated!');
@@ -60,9 +60,9 @@ export default function About() {
                         </AnimatedContent>
                     </div>
 
-                    <div className='grid lg:grid-cols-2 gap-16 max-w-[90%] mx-auto mt-15 lg:mt-28 px-4 mb-45'>
+                    <div className='grid lg:grid-cols-2 gap-10 xl:gap-15 max-w-[90%] lg:max-w-[100%] xl:max-w-[84%] mx-auto lg:px-12 xl:px-o mt-15 lg:mt-15  mb-45'>
                         <AnimatedContent
-                            distance={30}
+                            distance={35}
                             direction="horizontal"
                             reverse={true}
                             duration={1.2}
@@ -74,11 +74,11 @@ export default function About() {
                             delay={0}
                         >
                             <div>
-                                <img src={PP} alt="Profile Picture" className='lg:h-100 lg:w-200 object-fill rounded-2xl' />
+                                <img src={PP} alt="Profile Picture" className='h-80 w-80 sm:h-100 sm:w-100 mx-auto lg:h-120 lg:w-120 object-fill rounded-[30px]' />
                             </div>
                         </AnimatedContent>
                         <AnimatedContent
-                            distance={30}
+                            distance={35}
                             direction="horizontal"
                             reverse={false}
                             duration={1.3}
@@ -89,7 +89,7 @@ export default function About() {
                             threshold={0.1}
                             delay={0}
                         >
-                            <div className='text-gray-400 flex flex-col gap-4 xl:mt-7  flex-wrap font-medium'>
+                            <div className='text-gray-400 mx-auto flex flex-col gap-4 xl:mt-14 lg:mt-12 flex-wrap font-medium'>
                                 <p>I’m Tanmay, a Computer Science student focused on frontend development and modern web technologies.</p>
                                 <p>I specialize in building responsive and interactive web interfaces using React and Tailwind CSS. I enjoy working on clean component structures, smooth UI interactions, and creating layouts that adapt seamlessly across devices.</p>
                                 <p>My approach to learning is simple: build, break, fix, and improve. I enjoy solving problems, refining details, and constantly pushing my projects to a higher level of polish.</p>
