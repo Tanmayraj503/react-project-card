@@ -3,9 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from "react-router-dom";
+
 
 const getCurrentYear = () => new Date().getFullYear();
 export default function Footer() {
+    const navigate = useNavigate();
     return (
         <section className="footer flex-col bg-[#060B1A] border-t border-t-gray-900 w-full flex flex-wrap justify-center  items-center">
             <div className="flex justify-between flex-wrap md:flex-nowrap gap-5 items-center w-full pt-3 my-5 mx-auto px-7 ">
@@ -45,7 +48,8 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="text-gray-400 pb-7 text-center">© {getCurrentYear()} Tanmay Raj All rights reserved.</div>
+            <div className="text-gray-400 pb-7 text-center">© {getCurrentYear()} Tanmay Raj All rights reserved. <a onClick={() => navigate('/resume')} className="text-[#060B1A] cursor-pointer"> .</a>
+            </div>
         </section>
     );
 }
