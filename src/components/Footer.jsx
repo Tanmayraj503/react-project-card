@@ -48,7 +48,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="text-gray-400 pb-7 text-center">© {getCurrentYear()} Tanmay Raj All rights reserved. <a onClick={() => navigate('/resume')} className="text-[#060B1A] cursor-pointer"> .</a>
+            <div className="text-gray-400 pb-7 text-center">© {getCurrentYear()} Tanmay Raj All rights reserved. <a onClick={() => navigate('/secret')} className="text-[#060B1A] cursor-pointer"> .</a>
             </div>
         </section>
     );
