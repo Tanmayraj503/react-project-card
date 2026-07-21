@@ -26,7 +26,7 @@ export default function Home() {
       }}>
         <Particles
           particleColors={["#ffffff"]}
-          particleCount={210}
+          particleCount={350}
           particleSpread={28}
           speed={0.2}
           particleBaseSize={100}
