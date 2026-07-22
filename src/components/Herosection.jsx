@@ -62,11 +62,10 @@ export default function Hero() {
                             </button>
                         </motion.div>
                     </div>
-                    <motion.div className="text-white ml-20 bg-[#00fff721] hover:shadow-xl hover:shadow-[#ff910016] transition:duration xl:block hidden duration-300 rounded-lg p-6"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true,}}
-                        transition={{ duration: 0.1, type: "spring", stiffness: 100 }}>
+                    <motion.div className="text-white ml-20 bg-[#00fff721] hover:shadow-lg hover:shadow-[#ff910016] xl:block hidden  rounded-lg p-6"
+                        initial={{ opacity: 0, scale: 0.6 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.75 }}>
                         <div className="grid gap-y-5">
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="flex flex-col hover:shadow-lg hover:shadow-gray-600 bg-[#62e1d657] border border-gray-500 rounded-lg py-4 hover:scale-105 transition-duration duration-250">

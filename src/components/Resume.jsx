@@ -14,6 +14,7 @@ import { VscVscode } from "react-icons/vsc";
 import { FaCode } from "react-icons/fa";
 
 
+
 export default function Resume() {
 
     const softSkills = [
@@ -98,8 +99,8 @@ export default function Resume() {
                     >
                         <div className="download-button flex justify-center mt-12 mb-6 items-center bg-linear-to-r from-cyan-500 to-blue-500 text-white rounded-xl md:w-54 md:h-14 h-12 w-46 mx-auto hover:bg-purple-600 md:text-lg transition-colors">
                             <a 
-                            href=""
-                            download='Resume_Tanmay_Raj.pdf'
+                            href="/src/assets/Tanmay_Raj_Resume.pdf"
+                            download='Tanmay_Raj_Resume.pdf'
                             className='flex justify-center items-center gap-2'
                             ><FaDownload /> Download Resume
                             </a>

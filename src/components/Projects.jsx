@@ -19,6 +19,7 @@ import Header from "./header";
 import SplitText from "./SplitText";
 import AnimatedContent from './AnimatedContent'
 import QL from "../assets/quick-legal.png";
+import SS from "../assets/scholar-sync.png";
 
 
 export default function ProjectCardPortfolio() {
@@ -47,6 +48,14 @@ export default function ProjectCardPortfolio() {
                 description: "AI-powered legal document analyzer that evaluates Terms of Service and contracts for hidden risks. Generates a trust score, highlights risky clauses, and explains potential legal concerns in simple language.",
                 tags: ["React", "Node.js", "Tailwind", "Gemini API"],
                 liveUrl: "https://quick-legal.vercel.app/",
+                githubUrl: "https://github.com/Tanmayraj503"
+            },
+            {
+                image: SS,
+                title: "Scholar-Sync",
+                description: "AI-powered platform that bridges the gap between curiosity and quality education. It surfaces the best YouTube has to offer — not by luck, but by intelligent curation across time, depth, and community trust.",
+                tags: ["React", "Node.js", "Tailwind", "Gemini API", "Youtube API"],
+                liveUrl: "https://scholar-sync-xi.vercel.app/",
                 githubUrl: "https://github.com/Tanmayraj503"
             }
         ],

@@ -9,7 +9,7 @@ const Resume = lazy(() => import('./components/Resume.jsx'));
 const About = lazy(() => import('./components/About.jsx'));
 const Contact = lazy(() => import('./components/Contact.jsx'));
 const ScrollToTop = lazy(() => import('./components/ScrollToTop.jsx'));
-
+const Secret = lazy(() => import('./components/secret.jsx'));
 
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
             <Route path='Resume' element={<Resume />} />
             <Route path='About' element={<About />} />
             <Route path='Contact' element={<Contact />} />
+            <Route path='secret' element={<Secret />} />
           </Routes>
         </BrowserRouter>
       </Suspense>
