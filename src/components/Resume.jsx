@@ -12,7 +12,7 @@ import { GrMysql } from "react-icons/gr";
 import { DiMongodb } from "react-icons/di";
 import { VscVscode } from "react-icons/vsc";
 import { FaCode } from "react-icons/fa";
-
+import resumePdf from '../assets/Tanmay_Raj_Resume.pdf';
 
 
 export default function Resume() {
@@ -99,7 +99,7 @@ export default function Resume() {
                     >
                         <div className="download-button flex justify-center mt-12 mb-6 items-center bg-linear-to-r from-cyan-500 to-blue-500 text-white rounded-xl md:w-54 md:h-14 h-12 w-46 mx-auto hover:bg-purple-600 md:text-lg transition-colors">
                             <a 
-                            href="/src/assets/Tanmay_Raj_Resume.pdf"
+                            href={resumePdf}
                             download='Tanmay_Raj_Resume.pdf'
                             className='flex justify-center items-center gap-2'
                             ><FaDownload /> Download Resume
